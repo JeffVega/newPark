@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>:Park</title>
+ <link rel="stylesheet" href="Public/Styles/style.css">
+ <link rel="shortcut icon" type="image/x-icon" href="Public/Img/smiley.png" />
+</head>
+<body>
+    <div id="googlemaps"></div>
+  <header role="banner">
+    <h1 id="banner">Welcome to :Park</h1>
+    <nav>
+    <div class="dropdown">
+        <button class="dropbtn"><img class="dropdownImg"
+         src="Public/Img/ICON.png"></button>
+        <div class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Problems</a>
+        </div>
+      </div>
+    
+    <div class="avatar">
+        <img src="Public/Img/avatar.png" alt="Avatar Img">
+    </div>
+  </nav>
+  </header>
+  <section class="maps">
+  <h3 id="infomap">Maps</h3>
+  <form action="#">
+    Enter the address<br>
+    <input  placeholder="Enter address here" type="address" name="address"><br><br>
+    From<br>
+    <input type="date" name="Date" ><br><br>
+    To:<br>
+    <input type="date" name="Date" ><br><br>
+    <h2>Indoor</h2>
+
+
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<h2>Outdoor</h2>
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+    <input type="submit"> 
+    </form>
+    
+  </section>
+  <section>
+    <div class="parkedAreas">
+
+    </div>
+  </section>
+  <script src="Public/Scripts/index.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  
+</body>
+</html>
