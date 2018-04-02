@@ -10,9 +10,11 @@
 </head>
 <body>
     <div id="googlemaps"></div>
-  <header role="banner">
+  <header role="banner">    
+    <div class="avatar">
+        <img class="avatarImg" src="Public/Img/avatar.png" alt="Avatar Img">
+    </div>
     <h1 id="banner">Welcome to :Park</h1>
-    <nav>
     <div class="dropdown">
         <button class="dropbtn"><img class="dropdownImg"
          src="Public/Img/ICON.png"></button>
@@ -23,10 +25,8 @@
         </div>
       </div>
     
-    <div class="avatar">
-        <img src="Public/Img/avatar.png" alt="Avatar Img">
-    </div>
-  </nav>
+
+ 
   </header>
   <section class="maps">
   <h3 id="infomap">Maps</h3>
@@ -54,13 +54,20 @@
     </form>
     
   </section>
-  <section>
+  
     <div class="parkedAreas">
+      <h1>Parking Infomation </h1>
+      <div class="box1"><p>here</p></div>
+      <img class="spots" src="Public/Img/parkingone.jpg" draggable="false">
+      <div class="box1"><p>Not here</p></div>
+      <img class="spots" src="Public/Img/parkingtwo.jpg" draggable="false">
+      <div class="box1"><p>Uneven</p></div>
+      <img class="spots" src="Public/Img/parkingthree.jpg" draggable="false">
 
     </div>
-  </section>
+
   <script src="Public/Scripts/index.js"></script>
   <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

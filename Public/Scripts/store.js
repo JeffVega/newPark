@@ -1,10 +1,10 @@
 const STORE = {
-  bookmarks:[
+  Spots:[
   {
     id:cuid(),
-    title:'google',
-    url:"https://google.com",
-    description: 'help',
+    Address:'google',
+    Type:"SUV",
+    description: 'Great for large cars',
     rating:null
   },
  

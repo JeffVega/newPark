@@ -2,6 +2,7 @@
  /* all the style  */
  *{
   font-family: 'IM Fell Great Primer SC', serif;
+  box-sizing: border-box;
  }
 /* banner here  */
  #banner{
@@ -14,12 +15,13 @@
    text-align: center;
  }
  /* Avatar Image */
- img {
+ .avatarImg {
   width: 5%;
   border-radius: 50%;
+  position: relative;
   float: right;
 }
-img:hover{
+.avatarImg:hover{
   opacity: 0.5;
 }
  /*Slide check marks*/
@@ -108,7 +110,7 @@ background-image:url('../Img/Google-Maps.jpg')
   position: relative;
   display: inline-block;
   padding-right: 20px;
-  
+  /* float:left; */
 }
 
 .dropdown-content {
@@ -139,3 +141,24 @@ background-image:url('../Img/Google-Maps.jpg')
   background-color: #3e8e41;
 }
 
+/* Here is the park infomation  */
+.parkedAreas{
+  width: 300px;
+  height: auto;
+  background: antiquewhite;
+  float: right;
+  border-radius:30px;
+}
+.box1{
+  text-align: center;
+  background: #425f72;
+  display: block;
+  border-radius:10px;
+}
+/* Parking image */
+.spots{
+  max-width:30%;
+}
+.spots:hover{
+  max-width:100%;
+}
