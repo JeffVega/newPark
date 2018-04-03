@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC');
+/* @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC'); */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
  /* all the style  */
  *{
-  font-family: 'IM Fell Great Primer SC', serif;
+  /* font-family: 'IM Fell Great Primer SC', serif; */
+  font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
+ }
+ header{
+   width: 100%;
+   padding: 15px;
+  position: absolute;
+  top: 0;
  }
 /* banner here  */
  #banner{
@@ -85,11 +93,7 @@ input:checked + .slider:before {
    display: inline-block;
  }
 
-body{ 
 
-background-image:url('../Img/Google-Maps.jpg')
-
-}
 
 /* Here is the menu dropdown bar */
 .dropbtn {
@@ -140,9 +144,20 @@ background-image:url('../Img/Google-Maps.jpg')
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-
+.maps{
+  position: absolute;
+  top: 100px;
+}
+#map{
+  height:100%;
+  position: unset!important;
+}
 /* Here is the park infomation  */
 .parkedAreas{
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: 2;
   width: 300px;
   height: auto;
   background: antiquewhite;
@@ -161,4 +176,7 @@ background-image:url('../Img/Google-Maps.jpg')
 }
 .spots:hover{
   max-width:100%;
+}
+.gm-fullscreen-control,.gm-style-mtc{
+  display: none!important;
 }
