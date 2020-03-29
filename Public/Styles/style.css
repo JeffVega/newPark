@@ -1,182 +1,27 @@
-/* @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC'); */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
- /* all the style  */
- *{
-  /* font-family: 'IM Fell Great Primer SC', serif; */
-  font-family: 'Source Sans Pro', sans-serif;
+*{
+    margin: 0;
+  padding: 0;
   box-sizing: border-box;
- }
- header{
-   width: 100%;
-   padding: 15px;
-  position: absolute;
-  top: 0;
- }
-/* banner here  */
- #banner{
-   background-color:blanchedalmond;
-   display:inline-flex;
-   float: initial
- } 
- /* maps information */
- #infomap{
-   text-align: center;
- }
- /* Avatar Image */
- .avatarImg {
-  width: 5%;
-  border-radius: 50%;
-  position: relative;
-  float: right;
-}
-.avatarImg:hover{
-  opacity: 0.5;
-}
- /*Slide check marks*/
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {display:none;}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
- .maps{
-   background: whitesmoke;
-   display: inline-block;
- }
-
-
-
-/* Here is the menu dropdown bar */
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  /* padding: 16px; */
-  font-size: 16px;
-  border: black 2px solid;
-  cursor: pointer;
   
 }
- /* Here is the dropDown img */
-.dropdownImg{
-  width: 20px;
-  height: 20px;
+body{
+  height: 100vh;
+  overflow-x: hidden;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-  padding-right: 20px;
-  /* float:left; */
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left:0;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-.maps{
-  position: absolute;
-  top: 100px;
-}
+/* Mapping Config */
 #map{
-  height:100%;
-  position: unset!important;
-}
-/* Here is the park infomation  */
-.parkedAreas{
-  position: absolute;
-  right: 0;
-  top: 100px;
-  z-index: 2;
-  width: 300px;
-  height: auto;
-  background: antiquewhite;
-  float: right;
-  border-radius:30px;
-}
-.box1{
-  text-align: center;
-  background: #425f72;
-  display: block;
-  border-radius:10px;
-}
-/* Parking image */
-.spots{
-  max-width:30%;
-}
-.spots:hover{
-  max-width:100%;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 .gm-fullscreen-control,.gm-style-mtc{
   display: none!important;
+}
+/* HEADER STYLING START */
+/* ------------------------- */
+.banner__avatarImg {
+
+  height: 20%;
+  width: 50px;
+  border-radius: 20pc;
 }
