@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="public/img/smiley.png" />
+  
+</head>
+
+
+  <header role="banner">
+   
+    <h1 class="banner__text">Park</h1>
+    <div class="banner__dropdown">
+      {{!-- <input type="checkbox" class="dropbtn"> --}}
+      <div class="dropdown-content">
+        <ul>
+          <li> <a href="/">Home</a></li>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/problem">Problems</a></li>
+        </ul>
+     
+      </div>
+    </div>
+  </header>
+  {{{body}}}
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcXgfc08bFKvh2HkOilaX112ghHvyRBkU" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="public/js/index.js"></script>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>

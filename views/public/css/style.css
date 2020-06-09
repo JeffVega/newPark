@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto','sans-serif';
+}
+
+body{
+ 
+/* Mapping Config */
+}
+#map{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.gm-fullscreen-control,.gm-style-mtc{
+  display: none!important;
+}
+/* HEADER STYLING START */
+/* ------------------------- */
+.banner__avatarImg {
+
+  height: 20%;
+  width: 50px;
+  border-radius: 20pc;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.58);
+  background: whitesmoke;
+}
+header h1 {
+  color: #1f8c1f;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+header ul li {
+  padding: 5px;
+  margin: 3px;
+}
+header ul li a {
+  text-decoration: none;
+  color: grey;
+  transition: 0.1s ease-in;
+}
+header ul li a:hover {
+  color: #23a123;
+}
+.searchMap {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 10%;
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  background: #fff;
+}
+form > input {
+  width: 100%;
+  max-width: 100%;
+  height: 25px;
+  padding: 2px;
+  border-radius: 2px;
+  border: 1px solid grey;
+}
+.searchMap button {
+  font-size: 18px;
+  color: white;
+  background: green;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  margin: auto 40px;
+  transition: 0.3s ease-in;
+}
+.searchMap button:hover {
+  cursor: pointer;
+  background: black;
+}
+
+
+.landing_bg{
+  background-image: url('../img/parked-car.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}

@@ -25,8 +25,38 @@
 //       // Google couldn't geocode this request. Handle appropriately.
 //   }
 // });
+$(function () {
+  
+   let  dateFrom = $('input[name=datefrom]')
+    let dateTo = 'input[name=dateto]'
 
 
+  $('input[name=datefrom]').change(function (e) { 
+      e.preventDefault();
+      console.log(this.value);
+    });
+    $('input[name=dateto]').change(function (e) { 
+      e.preventDefault();
+      console.log(this.value);
+    });
+   
+    function sumbitForm(){
+      $('.btn-submit').click(function (e) { 
+        e.preventDefault();
+        
+      });
+      
+    }
+  function panelActive(){
+    let panel = Boolean;
+    $('.btn-arrow').click((e)=>{
+    
+      $('.searchMap').removeClass('panel-unactive').toggle()
+      
+    })
+  }
+  panelActive()
+  })
 
 
 
@@ -83,3 +113,4 @@
       addMarker({coords:event.latLng});
     });
  initMap();
+panelActive()
